@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SoundCloudAudio from '../utils/soundcloud-audio';
+import SoundCloudAudio from 'soundcloud-audio';
 import hoistStatics from 'hoist-non-react-statics';
 import { stopAllOther, addToPlayedStore } from '../utils/audioStore.js';
 

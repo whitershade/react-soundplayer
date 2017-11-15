@@ -17,8 +17,7 @@
     "build-css": "rm -rf ./styles && mkdir styles && node .cssnext",
     "build": "npm run build-js && npm run build-css && npm run build-dist-dev && npm run build-dist-prod",
     "lint": "eslint ./src --fix",
-    "prepublish": "npm run build",
-    "prepush": "npm run lint"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
@@ -36,7 +35,7 @@
     "object-assign": "^4.1.1",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "soundcloud-audio": "^1.2.0"
+    "soundcloud-audio": "git+https://github.com/whitershade/soundcloud-audio.js.git"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

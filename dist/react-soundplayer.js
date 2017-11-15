@@ -705,10 +705,12 @@ function withSoundCloudAudio(WrappedComponent) {
         var _props = this.props,
             resolveUrl = _props.resolveUrl,
             streamUrl = _props.streamUrl,
-            onReady = _props.onReady;
+            onReady = _props.onReady,
+            _props$preloadType = _props.preloadType,
+            preloadType = _props$preloadType === undefined ? 'auto' : _props$preloadType;
 
         if (streamUrl) {
-          soundCloudAudio.preload(streamUrl);
+          soundCloudAudio.preload(streamUrl, preloadType);
         } else if (resolveUrl) {
           soundCloudAudio.resolve(resolveUrl, function (data) {
             if (!_this2.mounted) {
